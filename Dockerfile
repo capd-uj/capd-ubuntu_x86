@@ -2,8 +2,10 @@ FROM capd/capd-builder-ubuntu_x86:5.0.64
 
 RUN env
 
-ARG DOCKER_TAG
-ENV CAPD_VERSION=${DOCKER_TAG}
+# ARG DOCKER_TAG
+# ENV CAPD_VERSION=${DOCKER_TAG}
+ENV CAPD_VERSION=5.1.0
+
 LABEL capd_version="${CAPD_VERSION}"
 
 RUN mkdir /tmp/capd/ /workdir
