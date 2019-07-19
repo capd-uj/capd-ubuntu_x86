@@ -1,5 +1,7 @@
 FROM capd/capd-builder-ubuntu_x86:5.0.64
 
+RUN env
+
 ARG DOCKER_TAG
 ENV CAPD_VERSION=${DOCKER_TAG}
 LABEL capd_version="${CAPD_VERSION}"

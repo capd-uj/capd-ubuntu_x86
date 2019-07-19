@@ -3,6 +3,7 @@
 set -e
 set -x
 
+
 echo "CAPD_VERSION: ${CAPD_VERSION}, DOCKER_TAG: ${DOCKER_TAG}"
 
 curl -L https://sourceforge.net/projects/capd/files/${CAPD_VERSION}/bin/capd-${CAPD_VERSION}-dev-ubuntu_x86-x86_64.tar.gz/download -o capd-${CAPD_VERSION}-dev-ubuntu_x86-x86_64.tar.gz
